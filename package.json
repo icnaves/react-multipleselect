@@ -1,6 +1,6 @@
 {
   "name": "react-multipleselect2",
-  "version": "1.0.1",
+  "version": "1.0.11",
   "description": "Multiple selectbox for React",
   "main": "build/index.js",
   "peerDependencies": {
