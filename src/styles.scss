@@ -1,0 +1,84 @@
+.multiple-select {
+	max-width: 250px;
+	max-height: 110px;
+	overflow-y: auto;
+	&::-webkit-scrollbar {
+		width: 4px;
+		cursor:pointer;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: #D3DCF4;
+		border-radius: 10px;
+		width: 3px;
+		height: 4px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #295396;
+		border-radius: 10px;
+	}
+	&__box {
+		max-height: 100px;
+	}
+	&__item {
+		padding: 1px 0;
+		font-size: 13px;
+		display: block;
+		color: rgba(0,0,0,.5);
+		img {
+			max-width: 18px;
+			display: inline-table;
+			position: relative;
+			bottom: 2px;
+		}
+		&.checked {
+			color: rgba(0,0,0,1);
+		}
+		input[type="checkbox"] {
+			position: absolute;
+			opacity: 0;
+			& + label {
+				position: relative;
+				cursor: pointer;
+				padding: 0;
+				font-weight: 400;
+			}
+
+			& + label:before {
+				content: '';
+				margin-right: 6px;
+				display: inline-block;
+				vertical-align: text-top;
+				width: 16px;
+				height: 16px;
+				background: white;
+				border: 1px solid #D3DCF4;
+				border-radius: 2px;
+			}
+
+			&:disabled + label {
+				color: #b8b8b8;
+				cursor: auto;
+			}
+
+			&:disabled + label:before {
+				box-shadow: none;
+				background: #ddd;
+			}
+
+			&:checked + label {
+				font-weight: 600;
+				&:after {
+					content: '';
+					position: absolute;
+					left: 4px;
+					top: 4px;
+					background: white url('./images/checkbox-check-blue.png') no-repeat center center;
+					width: 8px;
+					height: 10px;
+				}
+			}
+		}
+	}
+}
