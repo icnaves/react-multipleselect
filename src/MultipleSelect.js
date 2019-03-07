@@ -45,10 +45,11 @@ class MultipleSelect extends Component {
 		const { data } = this.state
 		const {
 			id = '',
+			className = '',
 			formatter = item => `${item.label}`
 		} = this.props
 
-		return <div className="multiple-select">
+		return <div className={`multiple-select ${className}`}>
 			<div className="multiple-select__box">
 				{ data.map((item, i) => 
 					<div key={ i } className={ item.checked ? "multiple-select__item checked" : "multiple-select__item"}>
@@ -65,6 +66,7 @@ MultipleSelect.propTypes = {
 	data: PropTypes.array.isRequired,
 	onChange: PropTypes.func.isRequired,
 	formatter: PropTypes.func,
+	className: PropTypes.string,
 }
 
 export default MultipleSelect
