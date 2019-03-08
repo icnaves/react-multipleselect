@@ -1,13 +1,13 @@
-react-multipleselect
+react-multipleselect2
 ==============
 
 [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][downloads-url]
 
 ### Installation
 ```sh
-$ npm install react-multipleselect --save
+$ npm install react-multipleselect2 --save
 ```
-*react-multipleselect requires React v.16.0.0 and up*
+*react-multipleselect2 requires React v.16.0.0 and up*
 
 ### Options
 
@@ -24,8 +24,8 @@ $ npm install react-multipleselect --save
 ```JavaScript
 
 import React, { Component } from 'react'
-import MultipleSelect from 'react-multipleselect'
-import 'react-multipleselect/build/styles.css'
+import MultipleSelect from 'react-multipleselect2'
+import 'react-multipleselect2/build/styles.css'
 
 export default class Home extends Component {
     render() {
