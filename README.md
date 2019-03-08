@@ -1,11 +1,13 @@
-react-multipleselect2
+react-multipleselect
 ==============
+
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][downloads-url]
 
 ### Installation
 ```sh
-$ npm install react-multipleselect2 --save
+$ npm install react-multipleselect --save
 ```
-*react-multipleselect2 requires React v.16.0.0 and up*
+*react-multipleselect requires React v.16.0.0 and up*
 
 ### Options
 
@@ -22,8 +24,8 @@ $ npm install react-multipleselect2 --save
 ```JavaScript
 
 import React, { Component } from 'react'
-import MultipleSelect from 'react-multipleselect2'
-import 'react-multipleselect2/build/styles.css'
+import MultipleSelect from 'react-multipleselect'
+import 'react-multipleselect/build/styles.css'
 
 export default class Home extends Component {
     render() {
@@ -47,15 +49,24 @@ export default class Home extends Component {
                 data={ data }
                 onChange={ values => console.log(values) }
                 className="select-box"
-                formatter={ item => item.label }
+                formatter={ item => `item.label` }
             />
         </div>)
     }
 }
-
 ```
+
+Demo
+----
+Check demo [here.][demo-url]
 
 License
 ----
 
 MIT
+
+[npm-image]: https://img.shields.io/npm/v/react-multipleselect2.svg
+[npm-url]: https://npmjs.org/package/react-multipleselect2
+[downloads-image]: http://img.shields.io/npm/dt/react-multipleselect2.svg
+[downloads-url]: https://npmjs.org/package/react-multipleselect2
+[demo-url]: http://sevanci.online/react-multipleselect2/
