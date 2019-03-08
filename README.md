@@ -49,7 +49,7 @@ export default class Home extends Component {
                 data={ data }
                 onChange={ values => console.log(values) }
                 className="select-box"
-                formatter={ item => `item.label` }
+                formatter={ item => item.label }
             />
         </div>)
     }
